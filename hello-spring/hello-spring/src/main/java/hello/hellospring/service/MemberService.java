@@ -3,14 +3,18 @@ package hello.hellospring.service;
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRespository;
 import hello.hellospring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+
 
 public class MemberService {
 
     private final MemberRespository memberRespository;
 
+    //생성자를 통해서 들어옴,생성자 주입
     public MemberService(MemberRespository memberReposiory ){
         this.memberRespository=memberReposiory;
     }
