@@ -16,6 +16,7 @@ public class MemberService {
 
     //생성자를 통해서 들어옴,생성자 주입
     public MemberService(MemberRespository memberReposiory ){
+
         this.memberRespository=memberReposiory;
     }
 
