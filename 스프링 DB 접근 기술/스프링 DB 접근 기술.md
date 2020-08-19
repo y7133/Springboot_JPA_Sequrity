@@ -206,3 +206,36 @@ public class MemberService {
 
 ![springconfig1](springconfig1.PNG)
 ![springconfig2](springconfig2.PNG)
+
+<br/>
+
+### 스프링 데이터 JPA
+
+-------------------------
+
+- 스프링 데이터 JPA를 사용하면, 기존의 한계를 넘어 리포지토리에 구현 클래스 없이 인터페이스만으로 개발 완료할 수 있음
+
+- CRUD기능도 스프링 데이터 JPA가 모두 제공
+- 실무에서 관계형 데이터베이스를 사용한다면 스프링데이터 JPA는 필수
+- **스프링 데이터 JPA는 JPA를 편리하게 사용하도록 도와주는 기술. JPA학습 후 스프링데이터 JPA학습**
+
+<br/>
+
+**스프링 데이터 JPA회원 리포지토리**
+
+![springjpa](springjpa.PNG)
+
+<br/>
+
+**스프링 데이터 JPA 회원 리포지토리를 사용하도록 스프링 설정 변경**
+
+![springconfigjpa](springconfigjpa.PNG)
+- 스프링 데이터 JPA가 SpringDataJpaMemberRepository 를 스프링 빈으로 자동 등록함
+
+***스프링데이터 JPA 제공 클래스***
+
+![구조](구조.PNG)
+- findAll,findAllById등 기능을 이미 가지고 있음
+- 인터페이스를 통한 기본적인 CRUD
+    - 메서드이름에And와 OR등을 사용할 수도있음
+    - Querydsl이라는 라이브러리는 복잡한 동적쿼리를 자바코드로 안전하고 편리하게 작성할 수 있음
